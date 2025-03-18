@@ -16,7 +16,7 @@ def get_gemini_response(prompt: str) -> str:
         return response.text
     
     except Exception as e:
-        return f"Error: {str(e)}"
+        return f"Error generating prompt response: {str(e)}"
 
 if __name__ == "__main__":
     user_prompt = input("Enter prompt: ")
